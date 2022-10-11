@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+<body>
+<h1 id="header"><a href="../index.html">JavaScript &amp; jQuery</a></h1>
+<h2>Chapter 3: Functions, Methods &amp; Objects</h2>
+<table>
+    <tr>
+        <td>1</td>
+        <td><strong>A Basic Function</strong></td>
+        <td><a href="basic-function.html">basic-function.html</a></td>
+        <td><a href="js/basic-function.js">basic-function.js</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><strong>Creating and Accessing Objects Using a Literal</strong></td>
+        <td><a href="object-literal.html">object-literal.html</a></td>
+        <td><a href="js/object-literal.js">object-literal.js</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><strong>A Second Object Created Using a Literal</strong></td>
+        <td><a href="object-literal2.html">object-literal2.html</a></td>
+        <td><a href="js/object-literal2.js">object-literal2.js</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><strong>Creating and Accessing Objects Using a Constructor</strong></td>
+        <td><a href="object-constructor.html">object-constructor.html</a></td>
+        <td><a href="js/object-constructor.js">object-constructor.js</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><strong>Creating and Accessing Multiple Objects</strong></td>
+        <td><a href="multiple-objects.html">multiple-objects.html</a></td>
+        <td><a href="js/multiple-objects.js">multiple-objects.js</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td><strong>Adding and removing properties</strong></td>
+        <td><a href="adding-and-removing-properties.html">adding-and-removing-properties.html</a></td>
+        <td><a href="js/adding-and-removing-properties.js">adding-and-removing-properties.js</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td><strong>Using the Browser Object Model</strong></td>
+        <td><a href="window-object.html">window-object.html</a></td>
+        <td><a href="js/window-object.js">window-object.js</a></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td><strong>Document Object</strong></td>
+        <td><a href="document-object.html">document-object.html</a></td>
+        <td><a href="js/document-object.js">document-object.js</a></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td><strong>Working With Strings</strong></td>
+        <td><a href="string-object.html">string-object.html</a></td>
+        <td><a href="js/string-object.js">string-object.js</a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td><strong>Working With Decimal Number &amp; Math Objects</strong></td>
+        <td><a href="number-object.html">number-object.html</a></td>
+        <td><a href="js/number-object.js">number-object.js</a></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td><strong>Math Object to Create Random Numbers</strong></td>
+        <td><a href="math-object.html">math-object.html</a></td>
+        <td><a href="js/math-object.js">math-object.js</a></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td><strong>Creating a Date Object</strong></td>
+        <td><a href="date-object.html">date-object.html</a></td>
+        <td><a href="js/date-object.js">date-object.js</a></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td><strong>Working With Dates &amp; Times</strong></td>
+        <td><a href="date-object-difference.html">date-object-difference.html</a></td>
+        <td><a href="js/date-object-difference.js">date-object-difference.js</a></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td><strong>Example</strong></td>
+        <td><a href="example.html">example.html</a></td>
+        <td><a href="js/example.js">example.js</a></td>
+    </tr>
+</table>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Math Object</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info"></div>
+<script src="js/math-object.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Function</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="message">Welcome to our site!</div>
+<script src="js/basic-function.js"></script>
+</body>
+</html>
+var holtel = new Object();
+
+hotel.name = 'Park';
+hotel.rooms = 120;
+hotel.booked = 77;
+hotel.checkAvailability = function() {
+    return this.rooms - this.booked;
+};
+
+var elName = document.getElementById(element: 'hotelName');
+elName.textContent = hotel.name;
+
+var elRooms = document.getElementById(element: 'room');
+elName.textContent = hotel.checkAvailability ();
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Date Object Difference</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="message">Established 1945</div>
+<script src="js/date-object-difference.js"></script>
+</body>
+</html>
+!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Date Object</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="footer"></div>
+<script src="js/date-object.js"></script>
+</body>
+</html>
+var msg = '<h2>browser window </h2><p>width: '+ window.innerWidth + '</p>';
+
+msg += '<p>height: '+ window.innerHeight + '</p>';
+
+msg += '<h2>history</h2><p>items: ' + window.history.lenght + '</p>';
+
+msg += '<h2>screen</h2><p>width: ' + window.screen.width +  '</p>';
+
+msg += '<p>height: '+ window.screen.height + '</p>';
+
+var el = document.getElementById(element: 'infor');
+
+el.innerHTML = msg;
+alert('Current page: ' + window.location);
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Adding properties</title>
+  <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info">
+  <h2>hotel facilities</h2>
+  <div id="hotelName"></div>
+  <div>
+    <p id="pool">Pool</p>
+    <p id="gym">Gym</p>
+  </div>
+</div>
+<script src="js/adding-and-removing-properties.js"></script>
+</body>
+</html>
+//Create  variable called msg to hold a new message
+var msg = 'sign up to receive our newsletter for 10% off!';
+
+
+//Create a function to update the content of the elment whose
+function updateMessage() {
+    var el = document.getElemntById(element: 'message');
+    el.textContent = msg;
+}
+//Call the function
+updateMessage ();
+function Hotel(name, rooms, booked) {
+    this.name = name;
+    this.rooms = rooms;
+    this.booked = booked;
+    this.checkAvailability = function() {
+        return this.rooms - this.booked;
+    };
+}
+
+var quayHotel = new Hotel(name: 'Quay', rooms: 40, booked: 25);
+var parkHotel = new Hotel(name: 'Park', rooms: 120, booked: 77);
+
+var details1 = quayHotel.name + 'rooms: ';
+    details1 += quayHotel.checkAvailability ();
+var elHotel1 = document.getElementById (element: 'hotel1')
+elHotel1 .textContent = details1 ;
+
+
+
+var details2 = quayHotel.name + 'rooms: ';
+    details2 += quayHotel.checkAvailability ();
+var elHotel2 = document.getElementById (element: 'hotel2')
+elHotel2 .textContent = details2 ;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Example</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info">
+    <h2>latest hotel offer</h2>
+    <div id="hotelName"></div>
+    <div id="roomRate"></div>
+    <div id="specialRate"></div>
+    <p>room rate when you book 2 or more nights</p>
+    <div id="offerEnds"></div>
+</div>
+<script src="js/example.js"></script>
+</body>
+</html>
+body {
+    background-color: #fff;
+    background: url("../images/travelworthy-backdrop.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;}
+
+h1 {
+    background: #1e1b1e url("../images/travelworthy-logo.gif") no-repeat;
+    width: 230px;
+    height: 180px;
+    float: left;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;}
+
+h2 {
+    margin: 1.75em 0 0 0;
+    color: #adffda;
+    font-weight: normal;}
+
+h2 + p {
+    margin: 0.25em 0 0 0;}
+p + p {
+    margin: 0;}
+p + h2 {
+    margin: 10px 0 0 0;}
+
+/* message under the logo */
+
+#message {
+    float: left;
+    clear: left;
+    background-color: #ffb87a;
+    color: #1e1b1e;
+    width:170px;
+    padding: 18px 30px;
+    text-align: center;}
+
+/* black bar across the right hand side of the page */
+
+#info {
+    background-color: #1e1b1e;
+    color: #fff;
+    width: 200px;
+    padding: 0 15px;
+    text-align: center;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 15%;}
+
+/* details in the black bar */
+
+#hotelName {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;}
+
+#hotel1 {
+    margin-top: 1em;
+    border-top: 1px solid #fff;
+    padding-top: 1em;}
+#hotel2 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1em;}
+
+#rooms {
+    font-size: 440%;
+    color: #ffb87a;
+    display: inline-block;
+    margin: 0;}
+
+#roomRate{
+    text-decoration: line-through;
+    display: inline-block;
+    float: left;
+    padding-top: 10px;}
+
+#specialRate {
+    font-size: 440%;
+    color: #ffb87a;
+    display: inline-block;
+    padding: 10px 0 20px 0;
+    margin: 0;}
+
+#offerEnds {
+    text-transform: uppercase;
+    color: #ffb87a;
+    font-size: 75%;}
+
+.true, .false {
+    padding: 0 50px 0 50px;
+    line-height: 28px;
+    text-align: left;
+    background-image: url("../images/check-cross.png");
+    background-position: 120px 0;
+    background-repeat: no-repeat;}
+
+.false {
+    background-position: 120px -28px;}
+
+/* footer */
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #adffda;}
+
+#footer p {
+    padding: 10px;
+    margin: 0;}
+
+.data {
+    padding: 10px;}
+var msg = '<p><b>page title: </b>' + document.title + '<br />';
+
+msg += '<b>page address: </b>' + document.URL + '<br />';
+
+msg += '<b>last modifier: </b>' + document.lastModified + '</p>';
+
+var el = document.getElementById (element: 'footer');
+
+el.innerHTML = msg;
+//Set up the object
+var hotel = {
+    name : 'Quay'
+    rooms : 40,
+    booked : 25,
+    checkAvailability : function() {
+        return this.room - this.booked; //Need this because inside function
+    }
+};
+
+// Update the HTML
+var elName = document.getElmentById(element: 'hotelName');
+elname.txetContent = hotel.name;
+
+var elRooms = document.getElementById(elment: 'room');
+elRooms.textContent = hotel.checkAvailability ();
+var hotel = {
+    name : 'Park',
+    rooms : 120,
+    booked : 77,
+    checkAvailability : function() {
+        return this.room - this.booked;
+    }
+};
+var elName = document.getElementById(element: 'hotelName' );
+elName.textContent = hotel.name;
+
+var elRooms = document.getElementById(element: 'rooms' );
+elName.textContent = hotel.checkAvailability ();
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TravelWorthy</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="footer"></div>
+<script src="js/document-object.js"></script>
+</body>
+</html>
+function() {
+    var hotel = {
+        name : 'Park',
+
+    }
+}
+var hotel = {
+    name : 'Park',
+    rooms : 120,
+    booked : 77
+};
+
+hotel.gym = true;
+hotel.pool = false;
+delete hotel.booked;
+
+var elName = document.getElementById (element: 'hotelName');
+elName.textContent = hotel.name;
+
+var elPool  = document.getElementById (element: 'pool');
+elName.textContent = hotel.pool;
+
+var elGym  = document.getElementById (element: 'gym');
+elName.textContent = hotel.gym;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Object Constructor</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info">
+    <h2>hotel availability</h2>
+    <div id="hotel1"></div>
+    <div id="hotel2"></div>
+</div>
+<script src="js/multiple-objects.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Number Object</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info"></div>
+<script src="js/number-object.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Object Constructor</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info">
+    <h2>hotel availability</h2>
+    <div id="hotelName"></div>
+    <div id="availability">
+        <p id="rooms"></p>
+        <p>rooms left</p>
+    </div>
+</div>
+<script src="js/object-constructor.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Object Literal</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info">
+    <h2>hotel availability</h2>
+    <div id="hotelName"></div>
+    <div id="availability">
+        <p id="rooms"></p>
+        <p>rooms left</p>
+    </div>
+</div>
+<script src="js/object-literal.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Object Literal 2</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info">
+    <h2>hotel availability</h2>
+    <div id="hotelName"></div>
+    <div id="availability">
+        <p id="rooms"></p>
+        <p>rooms left</p>
+    </div>
+</div>
+<script src="js/object-literal2.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - String Object</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info"></div>
+<script src="js/string-object.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Window Object</title>
+    <link rel="stylesheet" href="css/c03.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info"></div>
+<script src="js/window-object.js"></script>
+</body>
+</html>
