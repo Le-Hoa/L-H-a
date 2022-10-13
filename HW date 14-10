@@ -1,0 +1,124 @@
+var pass = 50;
+var cspre = 90;
+
+var hasPassed = score >=pass;
+var el = document.getElementById(elementld: 'answer');
+el.textContent = 'Level passed: ' + hasPassed;
+var score1 = 90;
+var score2 = 95;
+var highScore1 = 75;
+var highScore2 = 95;
+
+var comparison = (score1 + score2) > (highScore + highScore2);
+
+var el = document.getElementById(elementld: 'answer');
+el.textContent = 'New high score: ' + comparison ;
+var = 1;
+var msg = '';
+
+
+do {
+    msg += i + ' x 5 = ' + (i + 5) + '<br />';
+    i++;
+}while (i <= 10) ;
+
+document.getElementById (elementld: 'answer').innerHTML = msg;
+var table = 3;
+var operator = 'addition';
+var i = 1;
+var msg = '';
+
+if (operator === 'addition') {
+
+    while (i < 11) {
+        msg += i + ' = ' + table + ' = ' + (i + table) + <br />
+        i++;
+    }
+}else {
+    while (i<11) {
+        msg += i + ' x ' +table + '=' = (i * table) + '<br />';
+    }
+}
+var score = [24, 32, 17];
+var arrayLength = score.length;
+var roundNumber = 0;
+var msg = '';
+
+for (var i = 0; i < arrayLength; i++) {
+
+    roundNumber = (i +1 );
+    msg += 'Round' + roundNumber + ':';
+}
+document.getElementById (elementld: 'answer').innerHTML = msg;
+var pass = 50;
+var score = 75;
+var msg;
+
+if (score > pass) {
+    msg = 'Congratulation, you passed';
+} else {
+    msg = 'Have another go!';
+}
+var el = document.getElementById (elementld: 'answer');
+el.textContent = msg;
+
+var score = 75;
+var msg;
+
+if (score >= 50) {
+    msg = 'Congratulation!';
+    msg += 'Proceed to the next round.';
+}
+ var el = document.getElementById(elementld: 'answer');
+ el.textContent = msg;
+var score = 75;
+var msg = '';
+
+function congratulate() {
+    msg += 'Congratulation! ';
+}
+if (score >= 50) {
+    congratulate ();
+    msg += 'Procced to the next round.';
+}
+var el = document.getElementById (elementld: 'answer');
+el.innerHTML = msg;
+var = 1;
+var msg = '';
+
+while (i < 10) {
+    msg += i + ' x 5 = ' + '<br />';
+}
+document.getElementById (elementld: 'answer').innerHTML = msg;
+var score1 = 8;
+var score2 = 9;
+var pass1 = 6;
+var pass2 = 7;
+
+var passBoth = (score1 >= pass1) && (score2>= pass2);
+
+var msg = 'Both rounds passed: ' + PassBoth;
+
+var el = document.getElementById(elementld: 'answer');
+el.innerHTML = msg;
+var msg;
+var level = 2;
+switch (level) {
+    case 1:
+        msg = 'Good luck on the first test';
+        break;
+
+    case 2:
+        msg = 'Second of three - keep going!';
+        break;
+
+    case 3:
+        msg = 'Final round, almost there!';
+        break;
+
+    default :
+        msg = 'Good luck!';
+        break;
+}
+var el = document.getElementById (elementld: 'answer');
+el.textContent = msg;
