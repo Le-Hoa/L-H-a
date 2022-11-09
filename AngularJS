@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mayApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo for a simple AngularJS Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body ng-controller="myController">
+<h1>First AngularJS Application</h1>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+  <script src="angular.min.js "</script >
+</head>
+<body>
+<div ng-app="costApp" ng-controlller="CostController">
+  <b>Bill:</b>
+  <div> Quantuty: <input type="number" min="0" ng-model="qty" required </div>
+  <div> Cost : <input type="number" mmin="0" ng-model="cost" required ></div>
+  <div>
+    <b>Total:</b>
+    <span>
+      {{total | currency:' s'}}
+    </span>
+    <button class="btn" ng-click="pay()">Pay</button>
+  </div>
+  <script>
+    var app = agular.modle('costApp', []);
+    app.controller('CostController', function ($scope) {
+      $scope.qty = 0;
+      $scope.cost = 0;
+      $scope.total = 0;
+      $scope.pay = function(){
+        this.total = this.qty*this.cost
+      };
+    })
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Angular App Lifecyle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="costApp" ng-controller="CpstController">
+    <b>Bill</b>
+    <div>Quantity:<input type="number" min="0" ng-model="qty" required ></div>
+    <div>Cost: <input type="number" min="0" ng-model="cost" required </div>
+    <b>Total</b>
+    <span>
+        {{total | currency: ' Rs '}}
+    </span>
+    <button class="btn" ng-click="pay()">Pay</button>
+    <script>
+        var app = agular.modle('costApp', []);
+        app.controller('CostController', function ($scope) {
+            $scope.qty = 0;
+            $scope.cost = 0;
+            $scope.total = 0;
+            $scope.pay = function(){
+                this.total = this.qty*this.cost
+            };
+        })
+</script>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo for a simple AngularJS Application</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body ng-controller="myController">
+<script>
+  var app = angula.module("myApp",[]) ;
+  app.controller("myController",function($scope){
+      $scope.name ="" ;
+  });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo for a simple AngularJS Application</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body ng-controller="myController">
+<div>
+  <h3>Please enter your name here.</h3>
+   Name: <input type="text" ng-model="name" placeholder="enter your name" >
+  <p>Hello! <strong>{{name}}</strong> </p>
+  <p>Wellcome to AngularJS</p>
+</div>
+<script>
+  var app = angular.module ('myApp ',[]);
+  app.controller('myController',function($scope){
+    $scope.name = " ";
+  });
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ng-app Directive Test</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js">
+
+  </script>
+</head>
+<body>
+<div>
+    {{4/2}}
+</div>
+<div id="myDivTag" ng-app>
+    {{10/7}}
+    <div>
+        {{10/2}}
+    </div>
+</div>
+<div>
+    {{6/2}}
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<head
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js">
+
+</script>
+<style>
+  div {
+    border : 1px solid green;
+    width  :100%;
+    height : 50px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: yellow;
+  }
+
+</style>
+</head>
+<body ng-app="" ng-init="owners=['Bill','Steve','Jack]">
+<ol>
+  <li ng-repeat="name in owners">
+    {{name}}
+  </li>
+</ol>
+<div ng-repeat="name in owner">
+  {{name}}
+</div></body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo for ng-show and ng-hide</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js">
+</script>
+</head>
+<body ng-app="">
+      <p> Do you want to hide the list of cities?</p>
+      <input type="checkbox" ng-model="myVar">
+      <ul ng-hide = "myVar">
+        <li>Nairobi</li>
+        <li>London</li>
+        <li>Paris</li>
+      </ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js">
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js">
+</script>
+</head>
+<body ng-app="spApp">
+<h1>ng-include directive</h1>
+<div ng-controlller="SPController" class="container">
+  <div ng-include=" 'mainContent.html' "></div>
+  <div ng-include="'sideBar.html'"></div>
+</div>
+</body>
+<script>
+  var MyApp = angular.module('spApp', []);
+  MyApp.controller("SPController", function($scope) {
+    $scope.quantity = 1;
+    $scope.price=9.99;
+  });
+</script>
+</html>
+
+<div style="background-color: lightblue "</div>
+<h3>Lessons</h3>
+<p>Leson.com was established in Nov 2018. Lessons was started with a motive to present
+progaming codes and to help the developers all aroud the globe with different querues in different Progaming Languages.</p>
+</div>
+<div class="sideba" style="background-color: "
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ng-app Directive Test</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js">
+
+  </script>
+</head>
+<body>
+<div>
+  {{4/2}}
+</div>
+<div
+  {{10/7}}
+  <div>
+    {{10/2}}
+  </div>
+</div>
+<script>
+  var app = angular.module('myAngolarApp',[]);
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js">
+
+</script>
+<body>
+<div ng-app ng-init="greet='Hello ' ; amount=100; my Arr = [200, 300]";
+     person = {firstName:'Bill',lastName : 'Gates'}">
+   {{greet}}
+{{person.firstName}} <br/>
+    {{amount}}
+<br/>
+{{myArr[1]}}
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js">
+
+</script>
+<body ng-app>
+Enter Your Name <input type="text" ng-module="name" />
+<div>
+    Hello {{name}}
+</div>
+
+</body>
+</html>
