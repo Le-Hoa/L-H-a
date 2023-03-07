@@ -1,0 +1,192 @@
+package ArrayList;
+import java.util.ArrayList;
+import java.util.List;
+public class AccessElementsFomArrayListExample {
+    public static void main(String[] args) {
+        List<String> topCompanies = new ArrayList<>();
+        System.out.println("Is the topCopanies list empty? :" +topCompanies.isEmpty());
+
+        topCompanies.add("Google");
+        topCompanies.add("Apple");
+        topCompanies.add("Microsoft");
+        topCompanies.add("Amazon");
+        topCompanies.add("Facebook");
+
+        System.out.println("Here are the top " +topCompanies.size() + " conpanies in the world");
+        System.out.println(topCompanies );
+
+        String bestCompany = topCompanies.get(0);
+        String secondBestCompany = topCompanies.get(1);
+        String lastCompany = topCompanies.get(topCompanies.size() - 1);
+
+        System.out.println("Best Company :" + bestCompany );
+        System.out.println("Second Best Company:" + secondBestCompany );
+        System.out.println("Last Company in the list :" + lastCompany);
+
+        topCompanies.set(4,"Walmart");
+        System.out.println("Modified top companies list :" +topCompanies );
+    }
+}
+package ArrayList;
+import java.util.ArrayList ;
+import java.util.Iterator ;
+import java.util.List ;
+public class ArrayListIteratorRemoveExample {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>() ;
+        numbers.add(13);
+        numbers.add(18);
+        numbers.add(25);
+        numbers.add(40);
+        Iterator<Integer > numbersIterator = numbers.iterator();
+        while(numbersIterator .hasNext() ){
+            Integer num = numbersIterator.next() ;
+            if(num % 2 !=0) {
+                numbersIterator.remove() ;
+            }package ArrayList;
+import java.util.ArrayList;
+import java.util.List;
+public class CreateArrayListExample {
+    public static void main(String[] args) {
+        List<String> animals = new ArrayList<>();
+        animals.add("Lion");
+        animals.add("Tiger");
+        animals.add("Cat");
+        animals.add("Dog");
+        System.out.println(animals);
+
+        animals.add(2,"Elephant");
+package ArrayList;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CreateArrayListFromCollectionExample {
+    public static void main(String[] args) {
+        List<Integer> firstFivePrimeNumbers = new ArrayList<>() ;
+        firstFivePrimeNumbers .add(2);
+        firstFivePrimeNumbers .add(3);
+        firstFivePrimeNumbers .add(5);
+        firstFivePrimeNumbers .add(7);
+        firstFivePrimeNumbers .add(11);
+
+        List<Integer> firstTenPrimeNumbers = new ArrayList<>(firstFivePrimeNumbers);
+
+        List<Integer> nextFivePrimeNumbers = new ArrayList<>();
+        nextFivePrimeNumbers.add(13);
+        nextFivePrimeNumbers.add(17);
+        nextFivePrimeNumbers.add(19);
+        nextFivePrimeNumbers.add(23);
+        nextFivePrimeNumbers.add(29);
+
+        firstTenPrimeNumbers.addAll(nextFivePrimeNumbers);
+package ArrayList;
+import java.util.ArrayList ;
+import java.util.Iterator ;
+import java.util.List ;
+import java.util.ListIterator;
+public class IterateOverArrayListExample {
+    public static void main(String[] args) {
+        List<String> tvShows = new ArrayList<>();
+        tvShows.add("Breaking Bad");
+        tvShows.add("Game Of Thrones");
+        tvShows.add("Friends");
+        tvShows.add("Prison break");
+
+        System.out.println("=== Iterate using Java 8 forEach and lambda ===");
+        tvShows.forEach(tvShow  -> {
+            System.out.println(tvShow);
+        }) ;
+
+        System.out.println("\n=== Iterate using an iterate() ===");
+        Iterator<String> tvShowIterator = tvShows.iterator() ;
+        while (tvShowIterator.hasNext()) {
+            String tvShow = tvShowIterator.next();
+            System.out.println(tvShow);
+        }
+
+        System.out.println("\n=== Iterate using a listIterator() to traverse in both directions ===");
+        ListIterator<String> tvShowListIterator = tvShows.listIterator(tvShows.size());
+        while (tvShowListIterator .hasPrevious()) {
+            String tvShow = tvShowListIterator.previous();
+            System.out.println(tvShow);
+        }
+
+        System.out.println("\n=== Iterate using simple for-each loop ===");
+        for(String tvShow: tvShows) {
+            System.out.println(tvShow);
+        }
+
+        System.out.println("\n=== Iterate using for loop with index ===");
+        for(int i = 0; i < tvShows.size() ; i++) {
+            System.out.println(tvShows.get(i));
+        }package ArrayList;
+import java.util.ArrayList;
+import java.util.List ;
+public class Rapital {
+    public static void main(String[] args) {
+        List<String> rapper = new ArrayList<>();
+        rapper.add("Orijin");
+        rapper.add("Low-g");
+        rapper.add("RzMa$");
+        rapper.add("MCK");package ArrayList;
+import java.util.ArrayList ;
+import java.util.List;
+public class RemoveElementsFromArrayListExample {
+    public static void main(String[] args) {
+        List<String> programmingLanguages = new ArrayList<>();
+        programmingLanguages.add("C");
+        programmingLanguages.add("C++");
+        programmingLanguages.add("Java");
+        programmingLanguages.add("Kotlin");
+        programmingLanguages.add("Python");
+        programmingLanguages.add("Perl");
+        programmingLanguages.add("Ruby");
+
+        System.out.println("Initial List: " +programmingLanguages );
+        programmingLanguages .remove(5);
+
+        System.out.println("After remove(5) :" +programmingLanguages );
+
+        boolean isRemove = programmingLanguages.remove("Kotlin");
+        System.out.println("After remove(\"Kotlin\"): " +programmingLanguages ) ;
+
+        List<String> scriptingLanguages = new ArrayList<>();
+        scriptingLanguages.add("Python");
+        scriptingLanguages.add("Ruby");
+        scriptingLanguages.add("Perl");
+
+        programmingLanguages.removeAll(scriptingLanguages ) ;
+        System.out.println("After removeAll(scriptingLanguages): " + programmingLanguages );
+
+        programmingLanguages.removeIf(n -> (n.charAt(0) == 'T'));
+
+        System.out.println("After Roeming all element that starr with \"C\" : " +programmingLanguages );
+
+        programmingLanguages .clear();
+        System.out.println("After clear(): " + programmingLanguages );
+    }
+}
+
+        System.out.println(rapper);
+
+        rapper.add(2,"Beat:PhongKhin");
+    }
+}
+
+
+    }
+}
+
+        System.out.println(firstTenPrimeNumbers);
+    }
+}
+
+        System.out.println(animals);
+    }
+}
+
+        }
+        System.out.println(numbers);
+    }
+}
