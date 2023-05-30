@@ -1,0 +1,110 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Text;
+
+namespace Hospital
+{
+    ///<summary>
+    ///
+    ///
+    ///</summary>
+    ///<remarks> 
+    ///</remarks>
+    class DoctorTable
+    {
+        /// <summary>
+        /// </summary>
+        public Hashtable objDoctorDetails = new Hashtable();
+       ///<summary>
+       ///
+       ///</summary>
+        public void AcceptDetails()
+        {
+            string name;
+            //
+            string address;
+           //
+            char choice = 'Y';
+
+            try
+            {
+                do
+                {
+                    Console.Write("Enter the doctos's name : ");
+                    name = Console.ReadLine();
+                    Console.Write("Enter the adress : ");
+                    address = Console.ReadLine();
+                    //
+                    objDoctorDetails.Add(name, adress);
+                    Console.Write("Do u want to add more records [Y/N] : ");
+                    choice = Convert.ToChar(Console.ReadLine());
+                }while (choice == 'Y' || choice == 'y');
+            }
+            catch (Exception objEX)
+            {
+                Console.WriteLine("Error : {0}", objEx.Measage); 
+            }
+        }
+        /// <summary>
+        ///
+        /// </summary>
+        public void DisplayDetails()
+        {
+            ICollection objCollection = objCollectionDetails.Keys;
+
+            Console.WriteLine("\nDetails of doctors :");
+            Console.WriteLine("Doctor's Nmae \t Address");
+            Console.WriteLine("______________\t________");
+            //
+            foreach(string details  in objCollection )
+            {
+                Console.WriteLine(details + "\t\t" + objDoctorDetails[details]);
+            }
+            //
+            Console.WriteLine("Total number of doctors: " + objDoctorDetails.Count);
+        }
+        /// <summary>
+        ///
+        /// </summary>
+        /// <returns>....</returns>
+        public bool Remove()
+        {
+            string choice;
+            Console.Write("Enter the name of the doctor : ");
+            choice = Console.ReadLine();
+            //
+            if (objDoctorDetails.ContainsKey(choice))
+            {
+                objDoctorDetails.Remove(choice);
+                return true;
+            }
+            else
+            return false ;
+        }
+            ///<summary>
+            //
+            ///<summary>
+        public void Search()
+            {
+                string choice;
+                Console.Write("Enter the name of the doctor : ");
+                choice = Console.ReadLine();
+                if (choice ! = "")
+                {
+                    if (objDoctorDetails.ContainsKey(choice))
+                    {
+                        Console.WriteLine("Record Found!");
+                        Console.WriteLine("Doctor's Name : {0}", choice);
+                        Console.WriteLine("Address: {0}",objDoctorDetails[choice]);
+                    }
+                    else
+                    Console.WriteLine("Record Not Found!");
+                }
+                else
+                {
+                     Console.WriteLine("Invalid Input!");
+                }
+            }
+        }
+    }
